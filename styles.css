@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Gujarati:wght@300;400;500&family=Roboto:wght@100&display=swap");
+
+/* body {
+  margin: 0;
+  padding: 0;
+  font-family: "Anek Gujarati", sans-serif;
+  font-family: "Roboto", sans-serif;
+} */
+
+.header {
+  background: url("image/image5.jpg") center/cover no-repeat;
+  height: 50vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Anek Gujarati", sans-serif;
+}
+
+.navbar {
+  background-color: #ffffff;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 98%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+}
+
+.menu-icon {
+  font-size: 24px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  display: none;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  color: #000000;
+}
+
+.nav-list li {
+  margin: 0 15px;
+  color: #000000;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 768px) {
+  .menu-icon {
+    display: block;
+    position: relative;
+    margin-right: 10px;
+  }
+
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    width: 94.5%;
+    position: absolute;
+    background-color: #333;
+    text-align: center;
+    top: 90px;
+    left: 0;
+  }
+
+  .nav-list.show {
+    display: flex;
+  }
+
+  .nav-list li {
+    margin: 10px 0;
+  }
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.card {
+  width: 350px;
+  margin: 10px;
+  border: 2px solid;
+  border-top-color: #ff0000;
+  border-left-color: rgb(13, 66, 152);
+  border-right-color: aqua;
+  border-bottom-color: purple;
+  border-top-right-radius: 360px;
+  border-bottom-left-radius: 360px;
+  border-top-left-radius: 360px;
+  border-bottom-right-radius: 360px;
+  padding: 20px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.nav-list a:hover {
+  color: aqua;
+  transition: 0.5s;
+}
